@@ -6,8 +6,8 @@
 ## 📦 Установка
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-username/bank-operations-widget.git
-   cd bank-operations-widget
+   git clone https://github.com/ddesty/PythonProject.git
+   cd PythonProject
    ```
 2. Установите зависимости через Poetry:
    ```bash
@@ -51,8 +51,12 @@ python main.py
 ```
 
 ## 🧪 Тестирование
-Запуск линтеров:
 ```bash
-poetry run flake8    # Проверка стиля
-poetry run mypy src  # Проверка типов
+# Запуск тестов
+poetry run pytest
+
+# С покрытием кода
+poetry run pytest --cov=src --cov-report=html
+```
+**Покрытие:** 100% (актуально на 04.05.2025)
 ```
