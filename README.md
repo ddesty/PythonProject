@@ -59,4 +59,26 @@ poetry run pytest
 poetry run pytest --cov=src --cov-report=html
 ```
 **Покрытие:** 100% (актуально на 04.05.2025)
+
+## 🌀 Модуль generators
+
+### filter_by_currency
+```python
+from src.generators import filter_by_currency
+usd_transactions = filter_by_currency(transactions, "USD")
+print(next(usd_transactions))
+```
+
+### transaction_descriptions
+```python
+from src.generators import transaction_descriptions
+for desc in transaction_descriptions(transactions):
+    print(desc)
+```
+
+### card_number_generator
+```python
+from src.generators import card_number_generator
+for card in card_number_generator(1, 5):
+    print(card)  # 0000 0000 0000 0001 ... 0000 0000 0000 0005
 ```
