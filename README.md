@@ -82,3 +82,18 @@ from src.generators import card_number_generator
 for card in card_number_generator(1, 5):
     print(card)  # 0000 0000 0000 0001 ... 0000 0000 0000 0005
 ```
+
+
+## 🛠 Модуль decorators
+
+### Декоратор `log`
+Логирует вызовы функций. Пример использования:
+```python
+from src.decorators import log
+
+@log(filename="app.log")
+def calculate(a: int, b: int) -> int:
+    return a + b
+
+calculate(10, 20)  # Запись в app.log
+```
