@@ -11,7 +11,6 @@ def log(filename: Optional[str] = None) -> Callable:
     def decorator(func: Callable) -> Callable:
         @functools.wraps(func)
         def wrapper(*args: Any, **kwargs: Any) -> Any:
-            start_time = datetime.datetime.now()
             try:
                 result = func(*args, **kwargs)
                 log_message = f"{func.__name__} ok"
