@@ -1,7 +1,11 @@
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
+from unittest.mock import patch
+
 import pandas as pd
 
-from src.file_readers.universal_reader import read_csv_file, read_excel_file
+from src.file_readers.universal_reader import read_csv_file
+from src.file_readers.universal_reader import read_excel_file
+
 
 class TestUniversalReader:
     @patch('pandas.read_csv')

@@ -112,3 +112,21 @@ transactions = read_csv_file("data/transactions.csv")
 from src.file_readers.universal_reader import read_excel_file
 transactions = read_excel_file("data/transactions.xlsx")
 ```
+
+## 🔍 Поиск и анализ операций
+
+### Поиск по описанию
+```python
+from src.processing.search_operations import filter_by_description
+result = filter_by_description(transactions, 'перевод')
+```
+
+## Статистика по категориям
+
+```python
+from src.processing.category_counter import count_categories
+stats = count_categories(transactions)
+```
+
+### Основное меню
+Запустите main.py для интерактивной работы с транзакциями.

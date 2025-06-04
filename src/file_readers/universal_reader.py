@@ -1,6 +1,9 @@
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Hashable
+from typing import Any
+from typing import Dict
+from typing import Hashable
+from typing import List
 
 import pandas as pd
 
