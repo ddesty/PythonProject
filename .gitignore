@@ -19,3 +19,9 @@ dist/
 
 # Logs
 *.log
+
+# Environment files
+.env
+
+# Логи
+logs/
