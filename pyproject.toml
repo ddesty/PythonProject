@@ -21,6 +21,15 @@ black = "^25.1.0"
 isort = "^6.0.1"
 mypy = "^1.15.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
+mypy = "^1.15.0"
+pytest-mock = "^3.14.1"
+types-requests = "^2.32.0.20250515"
+pandas-stubs = "^2.2.3.250527"
+
 [tool.black]
 line-length = 119
 exclude = '''
@@ -37,3 +46,9 @@ force_single_line = true
 disallow_untyped_defs = true
 warn_return_any = true
 exclude = "venv"
+
+[tool.poetry.dependencies]
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+pandas = "^2.0.0"
+openpyxl = "^3.1.0"  # Для работы с Excel
