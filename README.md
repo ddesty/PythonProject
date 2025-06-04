@@ -97,3 +97,18 @@ def calculate(a: int, b: int) -> int:
 
 calculate(10, 20)  # Запись в app.log
 ```
+
+## 📁 Поддержка разных форматов данных
+
+Теперь проект поддерживает несколько форматов файлов с транзакциями:
+
+### CSV
+```python
+from src.file_readers.universal_reader import read_csv_file
+transactions = read_csv_file("data/transactions.csv")
+```
+### Excel (XLSX)
+```python
+from src.file_readers.universal_reader import read_excel_file
+transactions = read_excel_file("data/transactions.xlsx")
+```
